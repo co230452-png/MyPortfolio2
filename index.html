@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Al-Fahad Hamsaji — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Clash+Display:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur-r"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo"><b>Al-Fahad</b> <span style="color:var(--muted);">/</span> portfolio</div>
+  <ul class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div class="home-inner">
+    <div class="home-content slide-left">
+      <div class="status-pill">CS Student · Open to Opportunities</div>
+      <h1>
+        <span class="name">Al-Fahad Hamsaji</span>
+        <span class="ghost">Developer.</span>
+      </h1>
+      <p class="tagline">
+        Computer Science student at <span>Ateneo de Zamboanga University</span>,
+        building for the web and Android.
+        Passionate about <span>clean code</span>, <span>collaborative projects</span>,
+        and turning ideas into functional software.
+      </p>
+      <div class="cta-row">
+        <a href="#projects" class="btn btn-solid">↓ View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in touch →</a>
+        <a href="https://github.com/co230452-png" target="_blank" class="btn btn-outline">GitHub ↗</a>
+      </div>
+      <div class="home-meta">
+        <div class="meta-item">
+          <div class="meta-val">3<sup>rd</sup></div>
+          <div class="meta-lbl">Year Student</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-val">3<sup>+</sup></div>
+          <div class="meta-lbl">Projects Built</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-val">5<sup>×</sup></div>
+          <div class="meta-lbl">Academic Honors</div>
+        </div>
+      </div>
+    </div>
+    <div class="home-photo slide-right">
+      <div class="photo-frame">
+        <img src="profile.jpg" alt="Al-Fahad Hamsaji"/>
+        <div class="photo-border"></div>
+        <div class="photo-tag">al-fahad.jpg</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-label slide-left">01 — About</div>
+  <h2 class="slide-left" style="transition-delay:.1s;">Who I am.</h2>
+  <div class="about-grid">
+    <div class="fade-up">
+      <div class="about-text">
+        <p>I'm <strong>Al-Fahad Hamsaji</strong>, a Computer Science student at <strong>Ateneo de Zamboanga University</strong>, expected to graduate in 2027.</p>
+        <p>I enjoy building things — from <strong>web systems</strong> with PHP backends to <strong>Android mobile apps</strong> in Java. I thrive in collaborative environments and have completed multiple group projects tackling real-world problems.</p>
+        <p>Outside the classroom, I push myself to write clean, well-organized code and continuously level up my skills in <strong>full-stack development</strong> and <strong>mobile development</strong>.</p>
+      </div>
+      <div class="honors" style="margin-top:1.5rem;">
+        <div class="honors-title">Academic Honors</div>
+        <div class="honor-row">
+          <span class="honor-sem">2023–2024 · 1st Sem</span>
+          <span class="honor-badge">Second Honor</span>
+        </div>
+        <div class="honor-row">
+          <span class="honor-sem">2023–2024 · 2nd Sem</span>
+          <span class="honor-badge">Second Honor</span>
+        </div>
+        <div class="honor-row">
+          <span class="honor-sem">2024–2025 · 1st Sem</span>
+          <span class="honor-badge">Second Honor</span>
+        </div>
+        <div class="honor-row">
+          <span class="honor-sem">2024–2025 · 2nd Sem</span>
+          <span class="honor-badge">Second Honor</span>
+        </div>
+        <div class="honor-row">
+          <span class="honor-sem">2025–2026 · 1st Sem</span>
+          <span class="honor-badge first">First Honor ★</span>
+        </div>
+      </div>
+    </div>
+    <div class="slide-right" style="transition-delay:.15s;">
+      <div class="term">
+        <div class="term-bar">
+          <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+          <span class="term-title">alfahad@adzu ~ profile.json</span>
+        </div>
+        <div class="term-body">
+          <div><span class="tc">// quick facts</span></div>
+          <div>{</div>
+          <div>&nbsp;&nbsp;<span class="tk">"name"</span>: <span class="ts">"Al-Fahad Hamsaji"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"university"</span>: <span class="ts">"ADZU"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"program"</span>: <span class="ts">"BS Computer Science"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"year"</span>: <span class="tn">3</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"grad_year"</span>: <span class="tn">2027</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"open_to_work"</span>: <span class="tb">true</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"focus"</span>: [</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ts">"web development"</span>,</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ts">"android development"</span>,</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="ts">"backend integration"</span></div>
+          <div>&nbsp;&nbsp;],</div>
+          <div>&nbsp;&nbsp;<span class="tk">"location"</span>: <span class="ts">"Zamboanga City, PH"</span>,</div>
+          <div>&nbsp;&nbsp;<span class="tk">"email"</span>: <span class="ts">"Ahamsaji@gmail.com"</span></div>
+          <div>}</div>
+          <br/>
+          <div><span class="tp">$</span><span class="ts" id="typed"></span><span style="color:var(--accent);animation:blink 1s infinite;">▋</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div class="sec-label slide-left">02 — Skills</div>
+    <h2 class="slide-left" style="transition-delay:.1s;">What I work with.</h2>
+    <div class="skills-grid">
+      <div class="skill-card fade-up">
+        <div class="sk-icon">⌨️</div>
+        <div class="sk-title">Programming Languages</div>
+        <div class="sk-tags">
+          <span class="sk-tag">C++</span>
+          <span class="sk-tag">JavaScript</span>
+          <span class="sk-tag">Java</span>
+          <span class="sk-tag">PHP</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:.08s;">
+        <div class="sk-icon">🌐</div>
+        <div class="sk-title">Web Development</div>
+        <div class="sk-tags">
+          <span class="sk-tag">HTML</span>
+          <span class="sk-tag">CSS</span>
+          <span class="sk-tag">JavaScript</span>
+          <span class="sk-tag">PHP</span>
+          <span class="sk-tag">Responsive Design</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:.16s;">
+        <div class="sk-icon">🧩</div>
+        <div class="sk-title">Frameworks</div>
+        <div class="sk-tags">
+          <span class="sk-tag">Laravel</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:.24s;">
+        <div class="sk-icon">📱</div>
+        <div class="sk-title">Android Development</div>
+        <div class="sk-tags">
+          <span class="sk-tag">Java</span>
+          <span class="sk-tag">Android SDK</span>
+          <span class="sk-tag">Android Studio</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:.32s;">
+        <div class="sk-icon">🗄️</div>
+        <div class="sk-title">Backend & Database</div>
+        <div class="sk-tags">
+          <span class="sk-tag">PHP</span>
+          <span class="sk-tag">Backend Integration</span>
+          <span class="sk-tag">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-card fade-up" style="transition-delay:.4s;">
+        <div class="sk-icon">🤝</div>
+        <div class="sk-title">Languages</div>
+        <div class="sk-tags">
+          <span class="sk-tag">English</span>
+          <span class="sk-tag">Filipino</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-label slide-left">03 — Projects</div>
+  <h2 class="slide-left" style="transition-delay:.1s;">Things I've built.</h2>
+  <div class="proj-grid">
+
+    <div class="proj-card fade-up">
+      <div class="proj-top">
+        <div class="proj-icon">🐾</div>
+        <a href="https://github.com/co230452-png/ge_rey" target="_blank" class="proj-gh">GitHub ↗</a>
+      </div>
+      <div class="proj-name">Geallian Rey Pet Grooming System</div>
+      <p class="proj-desc">A full pet grooming salon website featuring service and product browsing, appointment booking, and a PHP-powered backend. Built with a focus on usability and responsive design.</p>
+      <div class="proj-stack">
+        <span class="p-tag">HTML</span>
+        <span class="p-tag">CSS</span>
+        <span class="p-tag">JavaScript</span>
+        <span class="p-tag">PHP</span>
+      </div>
+    </div>
+
+    <div class="proj-card fade-up" style="transition-delay:.1s;">
+      <div class="proj-top">
+        <div class="proj-icon">🚒</div>
+        <a href="https://github.com/jonorill/BFP-FIRe" target="_blank" class="proj-gh">GitHub ↗</a>
+      </div>
+      <div class="proj-name">BFP Fire Incident Record System</div>
+      <p class="proj-desc">A digital record management system for BFP personnel to submit, manage, and track fire incident reports. Structured data management for efficient handling and organization.</p>
+      <div class="proj-stack">
+        <span class="p-tag">HTML</span>
+        <span class="p-tag">CSS</span>
+        <span class="p-tag">JavaScript</span>
+        <span class="p-tag">PHP</span>
+      </div>
+    </div>
+
+    <div class="proj-card fade-up" style="transition-delay:.2s;">
+      <div class="proj-top">
+        <div class="proj-icon">🗺️</div>
+        <a href="https://github.com/YsaDanielle/TourDeZamboanga" target="_blank" class="proj-gh">GitHub ↗</a>
+      </div>
+      <div class="proj-name">Tour De Zamboanga</div>
+      <p class="proj-desc">An Android mobile app showcasing tourist spots in Zamboanga City. Features clickable destination listings with detailed info pages, descriptions, and smooth in-app navigation.</p>
+      <div class="proj-stack">
+        <span class="p-tag">Java</span>
+        <span class="p-tag">Android SDK</span>
+        <span class="p-tag">Android Studio</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="sec-label slide-top" style="justify-content:center;">04 — Contact</div>
+    <h2 class="slide-top" style="transition-delay:.1s;">Let's connect.</h2>
+    <p class="slide-top" style="transition-delay:.2s;">Whether you have an opportunity, a project idea, or just want to say hi — feel free to reach out. I'll get back to you as soon as I can.</p>
+
+    <div class="contact-form slide-bottom" style="transition-delay:.3s;">
+      <div class="form-grid">
+        <div class="form-row">
+          <label>Your Name</label>
+          <input type="text" id="f-name" placeholder="Name"/>
+        </div>
+        <div class="form-row">
+          <label>Your Email</label>
+          <input type="email" id="f-email" placeholder="Email"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <label>Subject</label>
+        <input type="text" id="f-subject" placeholder="Internship opportunity / Collaboration / etc."/>
+      </div>
+      <div class="form-row">
+        <label>Message</label>
+        <textarea id="f-msg" placeholder="Your message here..."></textarea>
+      </div>
+      <button class="btn btn-solid" onclick="sendMsg()" style="width:100%;justify-content:center;">Send Message ↗</button>
+      <div id="form-status"></div>
+    </div>
+
+    <div class="socials">
+      <a href="mailto:Ahamsaji@gmail.com" class="soc-link">✉ Email</a>
+      <a href="https://github.com/co230452-png" target="_blank" class="soc-link">⌥ GitHub</a>
+      <a href="tel:09173929431" class="soc-link">📞 09173929431</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Al-Fahad Hamsaji · ADZU CS Student</span>
+  <span>Built with care · 2025 · <a href="inbox.html">Admin ↗</a></span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

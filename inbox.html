@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Inbox — Al-Fahad Hamsaji</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Clash+Display:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="inbox.css"/>
+</head>
+<body>
+
+<header>
+  <div class="h-logo"><b>al-fahad</b> / inbox</div>
+  <a href="index.html" class="h-back">← Back to Portfolio</a>
+</header>
+
+<main>
+  <div class="inbox-header">
+    <h1>📬 Messages</h1>
+    <div class="inbox-meta">
+      <span class="count-badge" id="total-badge">0 total</span>
+      <span class="unread-badge" id="unread-badge" style="display:none;"></span>
+      <button class="btn-clear" onclick="clearAll()">Clear All</button>
+    </div>
+  </div>
+
+  <div id="empty" style="display:none;">
+    <div class="empty-icon">✉</div>
+    <div class="empty-text">No messages yet.<br/>They'll appear here once someone sends you a message from the contact form.</div>
+  </div>
+
+  <div id="msg-list"></div>
+</main>
+
+<!-- MODAL -->
+<div id="modal-overlay">
+  <div id="modal">
+    <div class="modal-bar">
+      <h3 id="modal-subject">—</h3>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <dl class="modal-meta">
+        <dt>From</dt><dd id="modal-name">—</dd>
+        <dt>Email</dt><dd id="modal-email">—</dd>
+        <dt>Received</dt><dd id="modal-time">—</dd>
+      </dl>
+      <div class="modal-msg" id="modal-msg">—</div>
+      <div class="modal-actions">
+        <a id="modal-reply-btn" href="#" class="btn-reply">Reply via Email ✉</a>
+        <button class="btn-del" onclick="deleteMsg()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="inbox.js"></script>
+</body>
+</html>

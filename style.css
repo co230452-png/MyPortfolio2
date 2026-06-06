@@ -37,7 +37,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 section{position:relative;z-index:1;}
 
 /* ── HOME ── */
-#home{min-height:100vh;display:flex;align-items:center;padding:8rem clamp(1.5rem,4vw,3rem) 4rem;max-width:1200px;margin:0 auto;}
+#home{min-height:100svh;display:flex;align-items:center;padding:clamp(5rem,10vw,8rem) clamp(1.5rem,4vw,3rem) clamp(3rem,6vw,4rem);max-width:1200px;margin:0 auto;}
 .home-inner{display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center;width:100%;}
 .home-content{max-width:680px;}
 .status-pill{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(0,229,255,.22);background:rgba(0,229,255,.05);padding:.3rem .9rem;margin-bottom:2rem;}
@@ -63,13 +63,13 @@ h1 .ghost{color:transparent;-webkit-text-stroke:1px rgba(0,229,255,.35);display:
 .btn-solid:hover{background:#33eeff;transform:translateY(-2px);}
 .btn-outline{background:transparent;color:var(--muted);border:1px solid var(--border);}
 .btn-outline:hover{color:var(--text);border-color:var(--muted);}
-.home-meta{display:flex;gap:3rem;margin-top:4rem;padding-top:2rem;border-top:1px solid var(--border);}
+.home-meta{display:flex;gap:3rem;margin-top:clamp(2rem,4vw,4rem);padding-top:2rem;border-top:1px solid var(--border);}
 .meta-val{font-family:var(--display);font-size:1.9rem;font-weight:700;color:var(--text);}
 .meta-val sup{color:var(--accent);font-size:1rem;}
 .meta-lbl{font-size:.65rem;color:var(--muted);letter-spacing:.12em;margin-top:.15rem;}
 
 /* ── ABOUT ── */
-#about{padding:7rem clamp(1.5rem,4vw,3rem);max-width:1200px;margin:0 auto;}
+#about{padding:clamp(3rem,7vw,7rem) clamp(1.5rem,4vw,3rem);max-width:1200px;margin:0 auto;}
 .sec-label{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem;}
 .sec-label::after{content:'';width:50px;height:1px;background:var(--accent);opacity:.4;}
 h2{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;line-height:1.1;margin-bottom:2rem;}
@@ -95,7 +95,7 @@ h2{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700
 .tp{color:#39d353;margin-right:.4rem;}
 
 /* ── SKILLS ── */
-#skills{padding:7rem clamp(1.5rem,4vw,3rem);background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+#skills{padding:clamp(3rem,7vw,7rem) clamp(1.5rem,4vw,3rem);background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 .skills-inner{max-width:1200px;margin:0 auto;}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem;margin-top:2.5rem;}
 .skill-card{background:var(--bg);border:1px solid var(--border);padding:1.5rem;transition:border-color .25s,transform .25s;position:relative;overflow:hidden;}
@@ -108,7 +108,7 @@ h2{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700
 .sk-tag{font-size:.65rem;padding:.2rem .55rem;background:var(--surface);border:1px solid var(--border);color:var(--muted);letter-spacing:.05em;}
 
 /* ── PROJECTS ── */
-#projects{padding:7rem clamp(1.5rem,4vw,3rem);max-width:1200px;margin:0 auto;}
+#projects{padding:clamp(3rem,7vw,7rem) clamp(1.5rem,4vw,3rem);max-width:1200px;margin:0 auto;}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.5rem;margin-top:2.5rem;}
 .proj-card{background:var(--bg2);border:1px solid var(--border);padding:2rem;transition:border-color .25s,transform .25s;position:relative;overflow:hidden;cursor:none;}
 .proj-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,229,255,.04),transparent 55%);opacity:0;transition:opacity .3s;pointer-events:none;}
@@ -124,7 +124,7 @@ h2{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700
 .p-tag{font-size:.63rem;padding:.15rem .5rem;background:rgba(0,229,255,.06);border:1px solid rgba(0,229,255,.15);color:var(--accent);letter-spacing:.05em;}
 
 /* ── CONTACT ── */
-#contact{padding:7rem clamp(1.5rem,4vw,3rem);background:var(--bg2);border-top:1px solid var(--border);}
+#contact{padding:clamp(3rem,7vw,7rem) clamp(1.5rem,4vw,3rem);background:var(--bg2);border-top:1px solid var(--border);}
 .contact-inner{max-width:700px;margin:0 auto;text-align:center;}
 .contact-inner p{font-size:.83rem;color:var(--muted);line-height:1.85;margin:1rem 0 2rem;}
 .contact-form{text-align:left;background:var(--bg);border:1px solid var(--border);padding:2rem;margin-bottom:1.5rem;}

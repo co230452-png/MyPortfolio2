@@ -58,13 +58,16 @@ function type() {
 }
 setTimeout(type, 800);
 
-// Contact form → localStorage
+// Contact form → EmailJS
+emailjs.init('gHvxOMYs_Cmhpcrxo');
+
 function sendMsg() {
   const name    = document.getElementById('f-name').value.trim();
   const email   = document.getElementById('f-email').value.trim();
   const subject = document.getElementById('f-subject').value.trim();
   const msg     = document.getElementById('f-msg').value.trim();
   const st      = document.getElementById('form-status');
+  const btn     = document.querySelector('#contact .btn-solid');
 
   if (!name || !email || !msg) {
     st.innerHTML = '<span class="status-err">Please fill in all required fields.</span>';
@@ -75,23 +78,32 @@ function sendMsg() {
     return;
   }
 
-  const msgs = JSON.parse(localStorage.getItem('al-fahad_msgs') || '[]');
-  msgs.push({
-    id: Date.now(),
-    name,
-    email,
-    subject: subject || '(no subject)',
-    message: msg,
-    time: new Date().toISOString(),
-    read: false
+  btn.textContent = 'Sending...';
+  btn.style.opacity = '0.7';
+  btn.disabled = true;
+
+  emailjs.send('service_eit0o4d', 'template_g1x56jd', {
+    from_name:  name,
+    from_email: email,
+    subject:    subject || '(no subject)',
+    message:    msg
+  })
+  .then(() => {
+    st.innerHTML = '<span class="status-ok">✓ Message sent! I\'ll get back to you soon.</span>';
+    document.getElementById('f-name').value    = '';
+    document.getElementById('f-email').value   = '';
+    document.getElementById('f-subject').value = '';
+    document.getElementById('f-msg').value     = '';
+    btn.textContent = 'Send Message ↗';
+    btn.style.opacity = '1';
+    btn.disabled = false;
+    setTimeout(() => { st.textContent = ''; }, 5000);
+  })
+  .catch((err) => {
+    console.error('EmailJS error:', err);
+    st.innerHTML = '<span class="status-err">Something went wrong. Please try again.</span>';
+    btn.textContent = 'Send Message ↗';
+    btn.style.opacity = '1';
+    btn.disabled = false;
   });
-  localStorage.setItem('al-fahad_msgs', JSON.stringify(msgs));
-
-  st.innerHTML = '<span class="status-ok">✓ Message sent! I\'ll get back to you soon.</span>';
-  document.getElementById('f-name').value    = '';
-  document.getElementById('f-email').value   = '';
-  document.getElementById('f-subject').value = '';
-  document.getElementById('f-msg').value     = '';
-
-  setTimeout(() => { st.textContent = ''; }, 5000);
 }
